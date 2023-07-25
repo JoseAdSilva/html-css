@@ -7,7 +7,7 @@
 </head>
 <body>
     <h1>Exemplos de formulário</h1>
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="post" autocomplete="on">
         <p>
             <label for="iest">Estado</label>
              <select name="estado" id="iest">
@@ -25,13 +25,23 @@
                 </optgroup>
              </select>
         </p>
-        
-
+        <p>
+            <label for="iprof">Profissão</label>
+            <input type="text" name="prof" id="iprof" list="lstprof">
+            <datalist id="lstprof">
+                <option>Administrador</option>
+                <option>Contador</option>
+                <option value="Dev">Desenvolvedor</option>
+                <option value="Prof">Professor</option>
+            </datalist>
+        <p>
+            <label for="imsg">Mensagem</label><br>
+            <textarea name="msg" id="imsg" cols="30" rows="10"></textarea>
+        </p>
         <p>
             <input type="submit" value="Enviar">
             <input type="reset" value="Limpar">
-        </p>
-        
+        </p>        
     </form>
 </body>
 </html>
