@@ -37,8 +37,9 @@ menu > ul {
     list-style-type: none;
 }
 menu > ul > li > a {
+    font-size: 0.8em;
     display: block;
-    padding: 10px;
+    padding: 4px;
     text-decoration: none;
     text-align: center;
     background-color: rgb(87, 87, 87);
